@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+
+# --- Large data  ---
+# Raw turntable scans and reconstructed panorama cubes, 70-750 MB each.
+# Small results (figures, results.json, summary files, the dark frame) are kept.
+frames.npy
+cube.npz
+# exposure-sweep frame stacks (~90 MB each); results.json / sweep.csv are kept
+**/exposure_sweep/*/light.npz
+**/exposure_sweep/*/dark.npz
+
+# --- Local / editor ---
+viewer/imgui.ini
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
