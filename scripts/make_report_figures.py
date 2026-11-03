@@ -15,6 +15,7 @@ Inputs (the 26 Oct session):
     captures/exposure_sweep/<run>/           exposure / gain sweep
     captures/speed_comparison/               the three turntable scans
     captures/processing_comparisons/<run>/   period-method comparison
+    captures/material_comparison/analysis/   real vs fake fruit (exp_material_comparison.py)
     calibration/dark.npz                     session dark frame
 """
 
@@ -142,7 +143,7 @@ def fig_cellophane():
     """Filter transmission, and method A (shifted green) vs method B (measured)."""
     run = latest("cellophane/*")
     _, _, spec, total, x, lit = cal_cellophane.load_spectra(run)
-    fig, ax = plt.subplots(figsize=(COL, 2.1))
+    fig, ax = plt.subplots(figsize=(COL, 1.85))
     for f in cal_cellophane.FILTERS:
         t = np.where(lit, total[f] / np.maximum(total["white"], 1e-9), np.nan)
         ax.plot(x, 100 * t, color=HUE[f], label=f"{f.capitalize()} cellophane")
@@ -153,21 +154,20 @@ def fig_cellophane():
     meth = cal_cellophane.method_a_vs_b(spec, x, lit)
     names = {"R": "red", "G": "green", "B": "blue"}
     xmax = x[lit][-1]                         # beyond this the light had no signal
-    fig, axes = plt.subplots(3, 1, figsize=(COL, 4.0), sharex=True)
-    for ax, ch in zip(axes, ("B", "G", "R")):
+    # one axis: each pixel type scaled to its own measured peak, so shapes compare
+    fig, ax = plt.subplots(figsize=(COL, 2.2))
+    for ch in ("B", "G", "R"):
         m = meth[ch]
-        ax.plot(x, m["measured"], color=HUE[names[ch]], label="Measured (method B)")
+        k = np.nanmax(m["measured"][lit])
+        note = "" if ch == "G" else f" ({m['shape_angle_deg']:.1f}°)"
+        ax.plot(x, m["measured"] / k, color=HUE[names[ch]], lw=1.4, label=f"{names[ch].capitalize()} pixels{note}")
         if ch != "G":
-            ax.plot(x, m["model"], color=plotting.INK, ls="--", lw=1.1, label="Shifted green (method A)")
-            note = f"shape angle {m['shape_angle_deg']:.1f}°"
-        else:
-            note = "source of the shifted model"
-        ax.set_ylabel("Counts")
-        ax.set_xlim(0, xmax)
-        ax.set_title(f"{names[ch].capitalize()} pixels, {names[ch]} filter: {note}", loc="left")
-    axes[0].legend(ncol=2, loc="lower center", bbox_to_anchor=(0.5, 1.22), fontsize=6.5)
-    axes[-1].set_xlabel("Spectral column (blue → red)")
-    fig.tight_layout(h_pad=0.3)
+            model = np.where(m["model"] > 0, m["model"], np.nan)   # 0 = shifted off the data
+            ax.plot(x, model / k, color=HUE[names[ch]], ls="--", lw=1.1)
+    ax.plot([], [], color=plotting.INK, lw=1.4, label="Measured (method B)")
+    ax.plot([], [], color=plotting.INK, ls="--", lw=1.1, label="Shifted green (method A)")
+    ax.set(xlabel="Spectral column (blue → red)", ylabel="Normalised response", xlim=(0, xmax), ylim=(0, None))
+    ax.legend(ncol=2, loc="lower center", bbox_to_anchor=(0.5, 1.0), fontsize=6.5)
     save(fig, "cellophane_methods")
 
 
@@ -271,8 +271,32 @@ def fig_merging():
     save(fig, "merging")
 
 
+def fig_material():
+    """Relative reflectance of the real and fake lemon (left axis) and apple
+    (right axis): spectral shape, band = 10-90% spread over 30° sectors."""
+    res = json.load(open(os.path.join(store.CAPTURES_DIR, "material_comparison", "analysis", "results.json")))
+    x, sp = np.array(res["grid"]), res["spectra"]
+    fig, axl = plt.subplots(figsize=(COL, 2.0))
+    axr = axl.twinx()
+    lines = []
+    for ax, fruit, col in ((axl, "lemon", "#c99200"), (axr, "apple", "#c0392b")):
+        for kind, ls in (("real", "-"), ("fake", "--")):
+            c = sp[f"{kind}_{fruit}"]
+            ax.fill_between(x, c["p10"], c["p90"], color=col, alpha=0.15, lw=0)
+            lines += ax.plot(x, c["mean"], color=col, ls=ls, lw=1.3, label=f"{kind.capitalize()} {fruit}")
+        ax.set_ylabel(f"{fruit.capitalize()} relative reflectance", color=col)
+        ax.tick_params(axis="y", colors=col)
+    axr.spines["right"].set_visible(True)
+    axr.grid(False)
+    axl.set_xlim(x[0], x[-1])
+    axl.set_xlabel("Spectral column (blue → red)")
+    axl.legend(lines, [l.get_label() for l in lines], ncol=2, fontsize=6.5, loc="upper left")
+    save(fig, "material")
+
+
 FIGURES = {"snapshot": fig_snapshot, "lsf": fig_lsf, "snr": fig_snr, "cellophane": fig_cellophane,
-           "panoramas": fig_panoramas, "turns": fig_turns, "merging": fig_merging}
+           "panoramas": fig_panoramas, "turns": fig_turns, "merging": fig_merging,
+           "material": fig_material}
 
 
 def main():

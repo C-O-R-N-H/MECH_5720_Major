@@ -41,12 +41,13 @@ def main():
     camera.add_camera_args(ap)
     ap.add_argument("--n", type=int, default=3)
     ap.add_argument("--tag", default="", help="name added to the folder, e.g. white_card")
+    ap.add_argument("--experiment", default="snapshot", help="folder under captures/ to save into")
     args = ap.parse_args()
 
     cam = camera.open_camera(args)
     rgb = np.array([cam.grab_rgb()[0] for _ in range(args.n)])     # (n, h, w, 3)
     cam.set_controls(AeEnable=True)
-    out = store.new_run_dir("snapshot", args.tag or None)
+    out = store.new_run_dir(args.experiment, args.tag or None)
 
     h, w = rgb.shape[1:3]
     dark = pipeline.load_dark([0, h, 0, w], 1, args.exposure_us, args.gain, shape=(h, w))
