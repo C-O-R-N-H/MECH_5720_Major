@@ -1,0 +1,47 @@
+[
+  {
+    "scan": "20261026_212600_setting3_28.1s",
+    "period_s": 28.1464,
+    "turns": 2.49,
+    "lines": 379,
+    "rate_hz": 5.42,
+    "lines_per_turn": 152.5,
+    "deg_per_line_1turn": 2.36,
+    "max_gap_deg_merged": 2.18,
+    "blur_deg": 1.28,
+    "rev12_offset_deg": 0.0,
+    "turn_wobble_deg_rms": 0.05,
+    "rev12_sam_deg": 5.68,
+    "zipper_ratio": 0.99
+  },
+  {
+    "scan": "20261026_212345_setting2_13.9s",
+    "period_s": 13.8915,
+    "turns": 5.04,
+    "lines": 379,
+    "rate_hz": 5.41,
+    "lines_per_turn": 75.2,
+    "deg_per_line_1turn": 4.79,
+    "max_gap_deg_merged": 3.97,
+    "blur_deg": 2.59,
+    "rev12_offset_deg": 0.05,
+    "turn_wobble_deg_rms": 0.1,
+    "rev12_sam_deg": 4.33,
+    "zipper_ratio": 1.06
+  },
+  {
+    "scan": "20261026_211951_setting1_7.3s",
+    "period_s": 7.3311,
+    "turns": 9.55,
+    "lines": 379,
+    "rate_hz": 5.41,
+    "lines_per_turn": 39.7,
+    "deg_per_line_1turn": 9.07,
+    "max_gap_deg_merged": 1.86,
+    "blur_deg": 4.91,
+    "rev12_offset_deg": 0.02,
+    "turn_wobble_deg_rms": 0.38,
+    "rev12_sam_deg": 6.05,
+    "zipper_ratio": 1.19
+  }
+]

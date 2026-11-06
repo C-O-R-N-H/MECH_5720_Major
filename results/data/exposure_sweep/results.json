@@ -1,0 +1,133 @@
+{
+  "settings": [
+    {
+      "sweep": "exposure",
+      "exposure_ms": 25.0,
+      "gain": 8.0,
+      "signal": 138.72,
+      "noise": 16.3,
+      "snr": 8.51,
+      "read_noise": 5.01,
+      "dark_level": 53.4,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.91
+    },
+    {
+      "sweep": "exposure",
+      "exposure_ms": 50.0,
+      "gain": 8.0,
+      "signal": 280.03,
+      "noise": 22.33,
+      "snr": 12.54,
+      "read_noise": 5.68,
+      "dark_level": 57.0,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.75
+    },
+    {
+      "sweep": "exposure",
+      "exposure_ms": 100.0,
+      "gain": 8.0,
+      "signal": 570.26,
+      "noise": 30.83,
+      "snr": 18.5,
+      "read_noise": 6.78,
+      "dark_level": 63.8,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.35
+    },
+    {
+      "sweep": "exposure",
+      "exposure_ms": 200.0,
+      "gain": 8.0,
+      "signal": 1151.62,
+      "noise": 43.2,
+      "snr": 26.66,
+      "read_noise": 8.54,
+      "dark_level": 77.8,
+      "near_sat_pct": 0.0,
+      "rate_hz": 2.64
+    },
+    {
+      "sweep": "exposure",
+      "exposure_ms": 400.0,
+      "gain": 8.0,
+      "signal": 2176.45,
+      "noise": 47.49,
+      "snr": 45.83,
+      "read_noise": 11.27,
+      "dark_level": 106.2,
+      "near_sat_pct": 23.372,
+      "rate_hz": 1.36
+    },
+    {
+      "sweep": "gain",
+      "exposure_ms": 100.0,
+      "gain": 1.0,
+      "signal": 72.63,
+      "noise": 4.29,
+      "snr": 16.93,
+      "read_noise": 1.36,
+      "dark_level": 59.4,
+      "near_sat_pct": 0.0,
+      "rate_hz": 4.68
+    },
+    {
+      "sweep": "gain",
+      "exposure_ms": 100.0,
+      "gain": 2.0,
+      "signal": 145.5,
+      "noise": 8.31,
+      "snr": 17.52,
+      "read_noise": 2.19,
+      "dark_level": 58.6,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.43
+    },
+    {
+      "sweep": "gain",
+      "exposure_ms": 100.0,
+      "gain": 4.0,
+      "signal": 287.02,
+      "noise": 16.33,
+      "snr": 17.58,
+      "read_noise": 3.8,
+      "dark_level": 61.0,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.31
+    },
+    {
+      "sweep": "gain",
+      "exposure_ms": 100.0,
+      "gain": 16.0,
+      "signal": 1140.9,
+      "noise": 56.58,
+      "snr": 20.16,
+      "read_noise": 12.6,
+      "dark_level": 51.0,
+      "near_sat_pct": 0.0,
+      "rate_hz": 5.37
+    }
+  ],
+  "bright_region_pixels": 180382,
+  "linearity_exposure": {
+    "counts_per_ms": 5.737778823529411,
+    "worst_deviation_pct": 3.29358850073567,
+    "with_offset": {
+      "counts_per_ms": 5.795363478260872,
+      "offset_counts": -8.15782608695685,
+      "worst_deviation_pct": 1.4372398575800502
+    },
+    "points_used": 4
+  },
+  "linearity_gain": {
+    "counts_per_gain_unit": 71.34366568914956,
+    "worst_deviation_pct": 1.971211175184015,
+    "points_used": 5
+  },
+  "photon_transfer": {
+    "gain": 8.0,
+    "counts_per_photon": 1.5693878318094194,
+    "photons_per_pixel_at_reference": 363.3646116285488
+  }
+}

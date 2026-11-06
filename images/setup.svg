@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="900"
+   height="330"
+   viewBox="0 0 900 330"
+   version="1.1"
+   id="svg1312"
+   sodipodi:docname="setup.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1316" />
+  <sodipodi:namedview
+     id="namedview1314"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.0922512"
+     inkscape:cx="382.69583"
+     inkscape:cy="124.05571"
+     inkscape:window-width="1370"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="rays" />
+  <line
+     x1="20"
+     y1="200"
+     x2="711.35236"
+     y2="200"
+     stroke="#bbbbbb"
+     stroke-width="0.8"
+     stroke-opacity="1"
+     stroke-dasharray="2, 4"
+     id="line1089" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Object"
+     id="object">
+    <rect
+       x="30"
+       y="140"
+       width="24"
+       height="24"
+       fill="#d03b3b"
+       stroke="#333"
+       stroke-width="0.8"
+       id="rect1091" />
+    <rect
+       x="30"
+       y="164"
+       width="24"
+       height="24"
+       fill="#eda100"
+       stroke="#333"
+       stroke-width="0.8"
+       id="rect1093" />
+    <rect
+       x="30"
+       y="188"
+       width="24"
+       height="24"
+       fill="#2e9e4f"
+       stroke="#333"
+       stroke-width="0.8"
+       id="rect1095" />
+    <rect
+       x="30"
+       y="212"
+       width="24"
+       height="24"
+       fill="#2a6fd6"
+       stroke="#333"
+       stroke-width="0.8"
+       id="rect1097" />
+    <rect
+       x="30"
+       y="236"
+       width="24"
+       height="24"
+       fill="#7a4bb0"
+       stroke="#333"
+       stroke-width="0.8"
+       id="rect1099" />
+    <text
+       x="42.0"
+       y="274.0"
+       font-family="sans-serif"
+       font-size="11"
+       text-anchor="middle"
+       fill="#222"
+       id="text1105"><tspan
+         x="42.0"
+         dy="0em"
+         id="tspan1101">Object</tspan><tspan
+         x="42.0"
+         dy="1.2em"
+         id="tspan1103">(turntable)</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Baffles input"
+     id="baffles_input">
+    <g
+       id="g11332"
+       transform="rotate(14.166521,227.82424,191.99128)">
+      <rect
+         x="130"
+         y="152"
+         width="105"
+         height="6"
+         fill="#444444"
+         id="rect1108" />
+      <line
+         x1="140"
+         y1="158"
+         x2="140"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1110" />
+      <line
+         x1="158"
+         y1="158"
+         x2="158"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1112" />
+      <line
+         x1="176"
+         y1="158"
+         x2="176"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1114" />
+      <line
+         x1="194"
+         y1="158"
+         x2="194"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1116" />
+      <line
+         x1="212"
+         y1="158"
+         x2="212"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1118" />
+      <line
+         x1="230"
+         y1="158"
+         x2="230"
+         y2="170"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1120" />
+    </g>
+    <g
+       id="g11467"
+       transform="rotate(-9.4536743,214.70763,188.11127)">
+      <rect
+         x="130"
+         y="242"
+         width="105"
+         height="6"
+         fill="#444444"
+         id="rect1122" />
+      <line
+         x1="140"
+         y1="242"
+         x2="140"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1124" />
+      <line
+         x1="158"
+         y1="242"
+         x2="158"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1126" />
+      <line
+         x1="176"
+         y1="242"
+         x2="176"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1128" />
+      <line
+         x1="194"
+         y1="242"
+         x2="194"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1130" />
+      <line
+         x1="212"
+         y1="242"
+         x2="212"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1132" />
+      <line
+         x1="230"
+         y1="242"
+         x2="230"
+         y2="230"
+         stroke="#444444"
+         stroke-width="2"
+         stroke-opacity="1"
+         id="line1134" />
+    </g>
+    <text
+       x="183.4348"
+       y="283.72534"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1138"><tspan
+         x="183.4348"
+         dy="0"
+         id="tspan1136">Baffle tube</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Optics"
+     id="optics">
+    <g
+       id="g1145">
+      <path
+         d="m 249,166 q -12,34 0,68 12,-34 0,-68 z"
+         fill="#cfe3f5"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1141" />
+      <path
+         d="m 254,166 h 7 v 68 h -7 q 8,-34 0,-68 z"
+         fill="#a9c9e8"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1143" />
+    </g>
+    <text
+       x="254.14386"
+       y="111.63063"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1151"><tspan
+         x="254.14386"
+         dy="0"
+         id="tspan1147">Doublet 1</tspan><tspan
+         x="254.14386"
+         dy="13.200001"
+         id="tspan1149">(f = 31 mm)</tspan></text>
+    <rect
+       x="342"
+       y="152"
+       width="6"
+       height="45"
+       fill="#111111"
+       id="rect1153" />
+    <rect
+       x="342"
+       y="203"
+       width="6"
+       height="45"
+       fill="#111111"
+       id="rect1155" />
+    <text
+       x="345"
+       y="274"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1161"><tspan
+         x="345"
+         dy="0em"
+         id="tspan1157">Slit</tspan><tspan
+         x="345"
+         dy="1.2em"
+         id="tspan1159">(0.5 mm)</tspan></text>
+    <g
+       id="g1167"
+       transform="rotate(180,442.0012,200)">
+      <path
+         d="m 439,166 q -12,34 0,68 12,-34 0,-68 z"
+         fill="#cfe3f5"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1163" />
+      <path
+         d="m 444,166 h 7 v 68 h -7 q 8,-34 0,-68 z"
+         fill="#a9c9e8"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1165" />
+    </g>
+    <text
+       x="442.01279"
+       y="117.89206"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1173"><tspan
+         x="442.01279"
+         dy="0"
+         id="tspan1169">Doublet 2</tspan><tspan
+         x="442.01279"
+         dy="13.200001"
+         id="tspan1171">(f = 31 mm)</tspan></text>
+    <rect
+       x="517"
+       y="156"
+       width="6"
+       height="88"
+       fill="#e9e9e9"
+       stroke="#555555"
+       stroke-width="1"
+       id="rect1175" />
+    <line
+       x1="517"
+       y1="158"
+       x2="523"
+       y2="161"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1177" />
+    <line
+       x1="517"
+       y1="162"
+       x2="523"
+       y2="165"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1179" />
+    <line
+       x1="517"
+       y1="166"
+       x2="523"
+       y2="169"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1181" />
+    <line
+       x1="517"
+       y1="170"
+       x2="523"
+       y2="173"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1183" />
+    <line
+       x1="517"
+       y1="174"
+       x2="523"
+       y2="177"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1185" />
+    <line
+       x1="517"
+       y1="178"
+       x2="523"
+       y2="181"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1187" />
+    <line
+       x1="517"
+       y1="182"
+       x2="523"
+       y2="185"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1189" />
+    <line
+       x1="517"
+       y1="186"
+       x2="523"
+       y2="189"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1191" />
+    <line
+       x1="517"
+       y1="190"
+       x2="523"
+       y2="193"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1193" />
+    <line
+       x1="517"
+       y1="194"
+       x2="523"
+       y2="197"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1195" />
+    <line
+       x1="517"
+       y1="198"
+       x2="523"
+       y2="201"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1197" />
+    <line
+       x1="517"
+       y1="202"
+       x2="523"
+       y2="205"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1199" />
+    <line
+       x1="517"
+       y1="206"
+       x2="523"
+       y2="209"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1201" />
+    <line
+       x1="517"
+       y1="210"
+       x2="523"
+       y2="213"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1203" />
+    <line
+       x1="517"
+       y1="214"
+       x2="523"
+       y2="217"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1205" />
+    <line
+       x1="517"
+       y1="218"
+       x2="523"
+       y2="221"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1207" />
+    <line
+       x1="517"
+       y1="222"
+       x2="523"
+       y2="225"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1209" />
+    <line
+       x1="517"
+       y1="226"
+       x2="523"
+       y2="229"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1211" />
+    <line
+       x1="517"
+       y1="230"
+       x2="523"
+       y2="233"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1213" />
+    <line
+       x1="517"
+       y1="234"
+       x2="523"
+       y2="237"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1215" />
+    <line
+       x1="517"
+       y1="238"
+       x2="523"
+       y2="241"
+       stroke="#777777"
+       stroke-width="0.6"
+       stroke-opacity="1"
+       id="line1217" />
+    <text
+       x="529.73779"
+       y="274.30069"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1223"><tspan
+         x="529.73779"
+         id="tspan1219">Grating</tspan><tspan
+         x="529.73779"
+         dy="13.200001"
+         id="tspan1221">(500 lines/mm)</tspan></text>
+    <g
+       transform="rotate(-25,674.07232,128.1549)"
+       id="g1229">
+      <path
+         d="m 673.07232,94.154896 q -12,34.000004 0,68.000004 12,-34 0,-68.000004 z"
+         fill="#cfe3f5"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1225" />
+      <path
+         d="m 678.07232,94.154896 h 7 V 162.1549 h -7 q 8,-34 0,-68.000004 z"
+         fill="#a9c9e8"
+         stroke="#3a6f9e"
+         stroke-width="1"
+         id="path1227" />
+    </g>
+    <text
+       x="624.88397"
+       y="61.952839"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1235"><tspan
+         x="624.88397"
+         dy="0"
+         id="tspan1231">Doublet 3</tspan><tspan
+         x="624.88397"
+         dy="13.200001"
+         id="tspan1233">(re-imaging)</tspan></text>
+    <g
+       transform="rotate(-25,773.8,81.7)"
+       id="g1241">
+      <rect
+         x="773.79999"
+         y="41.700001"
+         width="10"
+         height="80"
+         fill="#2b2b2b"
+         id="rect1237" />
+      <rect
+         x="783.79999"
+         y="51.700001"
+         width="22"
+         height="60"
+         fill="#5a5a5a"
+         id="rect1239" />
+    </g>
+    <text
+       x="843.79999"
+       y="56.700001"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1249"><tspan
+         x="843.79999"
+         dy="0em 0 0 0 0 0"
+         id="tspan1243">Sensor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="522.22479"
+       y="350.89349"
+       id="text14477"><tspan
+         sodipodi:role="line"
+         id="tspan14475"
+         x="522.22479"
+         y="350.89349"></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Baffles zero order"
+     id="baffles_zero_order">
+    <rect
+       x="-174.0891"
+       y="699.5578"
+       width="5"
+       height="15"
+       fill="#444444"
+       id="rect1254"
+       transform="rotate(-90)" />
+    <rect
+       x="-197.45444"
+       y="691.93756"
+       width="5"
+       height="22"
+       fill="#444444"
+       id="rect1258"
+       transform="rotate(-90)" />
+    <rect
+       x="-186.24483"
+       y="694.08038"
+       width="5"
+       height="22"
+       fill="#444444"
+       id="rect1258-7"
+       transform="rotate(-90)" />
+    <rect
+       x="-218.40591"
+       y="685.5"
+       width="5"
+       height="29"
+       fill="#444444"
+       id="rect1262"
+       transform="rotate(-90)" />
+    <rect
+       x="-206.68004"
+       y="688.98541"
+       width="5"
+       height="29"
+       fill="#444444"
+       id="rect1262-6"
+       transform="rotate(-90)" />
+    <rect
+       x="-241.05688"
+       y="677.26337"
+       width="5"
+       height="36"
+       fill="#444444"
+       id="rect1266"
+       transform="rotate(-90)" />
+    <rect
+       x="-229.1423"
+       y="680.83374"
+       width="5"
+       height="36"
+       fill="#444444"
+       id="rect1266-3"
+       transform="rotate(-90)" />
+    <rect
+       x="712"
+       y="150"
+       width="10"
+       height="100"
+       fill="#111111"
+       id="rect1268" />
+    <text
+       x="708.55963"
+       y="272.99539"
+       font-family="sans-serif"
+       font-size="11px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1274"><tspan
+         x="708.55963"
+         dy="0"
+         id="tspan1270">Zero-order baffles</tspan><tspan
+         x="708.55963"
+         dy="13.200001"
+         id="tspan1272">(light trap)</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Rays"
+     id="rays"
+     style="mix-blend-mode:normal">
+    <polyline
+       points="54.0,200.0 250.0,174.0 345.0,200.0"
+       fill="none"
+       stroke="#555555"
+       stroke-width="1"
+       id="polyline1277" />
+    <polyline
+       points="54.0,200.0 250.0,226.0 345.0,200.0"
+       fill="none"
+       stroke="#555555"
+       stroke-width="1"
+       id="polyline1279" />
+    <polyline
+       points="54.0,200.0 250.0,200.0 345.0,200.0"
+       fill="none"
+       stroke="#555555"
+       stroke-width="1"
+       stroke-dasharray="4, 3"
+       id="polyline1281" />
+    <polyline
+       points="345.0,200.0 440.0,178.0 520.0,178.0"
+       fill="none"
+       stroke="#555555"
+       stroke-width="1"
+       id="polyline1283" />
+    <polyline
+       points="345.0,200.0 440.0,222.0 520.0,222.0"
+       fill="none"
+       stroke="#555555"
+       stroke-width="1"
+       id="polyline1285" />
+    <line
+       x1="520"
+       y1="178"
+       x2="712"
+       y2="178"
+       stroke="#999999"
+       stroke-width="1"
+       stroke-opacity="1"
+       stroke-dasharray="5, 3"
+       id="line1287" />
+    <line
+       x1="520"
+       y1="222"
+       x2="712"
+       y2="222"
+       stroke="#999999"
+       stroke-width="1"
+       stroke-opacity="1"
+       stroke-dasharray="5, 3"
+       id="line1289" />
+    <text
+       x="617.01935"
+       y="214.67067"
+       font-family="sans-serif"
+       font-size="9px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1293"><tspan
+         x="617.01935"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+         id="tspan1291">\textsubscript{0th order}</tspan></text>
+    <polyline
+       points="520.0,178.0 670.4,120.3 777.0,88.6"
+       fill="none"
+       stroke="#2a6fd6"
+       stroke-width="1.1"
+       id="polyline1295" />
+    <polyline
+       points="520.0,222.0 687.8,157.6 777.0,88.6"
+       fill="none"
+       stroke="#2a6fd6"
+       stroke-width="1.1"
+       id="polyline1297" />
+    <polyline
+       points="520.0,178.0 665.6,110.1 773.8,81.7"
+       fill="none"
+       stroke="#2e9e4f"
+       stroke-width="1.1"
+       id="polyline1299" />
+    <polyline
+       points="520.0,222.0 682.5,146.2 773.8,81.7"
+       fill="none"
+       stroke="#2e9e4f"
+       stroke-width="1.1"
+       id="polyline1301" />
+    <polyline
+       points="520.0,178.0 660.9,99.9 770.5,74.7"
+       fill="none"
+       stroke="#d03b3b"
+       stroke-width="1.1"
+       id="polyline1303" />
+    <polyline
+       points="520.0,222.0 677.2,134.9 770.5,74.7"
+       fill="none"
+       stroke="#d03b3b"
+       stroke-width="1.1"
+       id="polyline1305" />
+    <text
+       x="605"
+       y="112"
+       font-family="sans-serif"
+       font-size="9px"
+       text-anchor="middle"
+       fill="#222222"
+       id="text1309"><tspan
+         x="605"
+         dy="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0em"
+         id="tspan1307">\textsubscript{1st order}</tspan></text>
+  </g>
+</svg>

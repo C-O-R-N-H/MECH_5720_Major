@@ -6,7 +6,7 @@ The processing chain shared by scan.py (live preview), reconstruct.py
                   --(wavelength model)------> uniform wavelength grid
                   --(turntable angle)-------> panorama cube
 
-References (stage-2 calibration, cal_white_reference.py) are saved as
+White references (optional) are read from
     calibration/references/<stamp>/reference.npz   dark, white, exposure ...
 and calibration/references/latest points at the newest one.
 """
@@ -94,7 +94,7 @@ class LineCalibrator:
                 self.white = self.dark + (self.white - self.dark) * k
             if self.dark.shape != tuple(roi_shape):
                 raise ValueError(f"reference shape {self.dark.shape} != scan ROI {tuple(roi_shape)}: "
-                                 "frame size changed since the reference was taken — retake it (cal_white_reference.py)")
+                                 "frame size changed since the reference was taken — retake it")
         try:
             self.resampler, self.model = spectral.load_resampler(roi_shape, step_nm, lo_nm, hi_nm, row_bin)
             self.grid = self.resampler.grid

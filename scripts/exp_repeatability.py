@@ -11,7 +11,7 @@ of coloured paper taped vertically on a card) and keep the figure.
 
 Procedure
   1. Dark frame at the scan settings (take_dark.py). A white reference
-     (cal_white_reference.py) is optional: with it the numbers are in
+     is optional: with it the numbers are in
      reflectance, without it in dark-subtracted counts.
   2. Stop the turntable with the target in view. Stay still — moving
      around the room showed up as a 6% spike.
@@ -71,7 +71,7 @@ def main():
     for s in range(args.sessions):
         msg = "Place the stationary target on the stopped turntable."
         if s:
-            msg = "Remove and re-place the target (re-run cal_white_reference.py first if testing re-referencing)."
+            msg = "Remove and re-place the target."
         cam.prompt(msg, "lamp-patches")
         for i in range(args.n):
             f, m = cam.grab(args.method)

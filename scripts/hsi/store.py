@@ -3,9 +3,8 @@ Where things live on disk.
 
     captures/<experiment>/<timestamp>[_<tag>]/   one folder per run
     calibration/dark.npz                        dark frame at the scan settings (take_dark.py)
-    calibration/wavelength.json                 pixel -> nm model           (cal_wavelength.py)
-    calibration/references/<stamp>/             dark + white reference      (cal_white_reference.py)
-    calibration/response.npz                    camera spectral response    (cal_white_reference.py --sun)
+    calibration/wavelength.json                 pixel -> nm model           (cal_cellophane.py --install)
+    calibration/references/<stamp>/             dark + white reference      (optional)
 
 Calibration files are the hand-off between scripts: each reads whatever
 has been written so far and falls back (uncalibrated) or stops with a
@@ -73,4 +72,4 @@ def require_calib(name, made_by):
 
 
 def load_wavelength():
-    return load_json(require_calib("wavelength.json", "cal_wavelength.py"))
+    return load_json(require_calib("wavelength.json", "cal_cellophane.py analyse --install"))

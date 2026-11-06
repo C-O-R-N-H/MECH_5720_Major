@@ -1,0 +1,123 @@
+{
+  "run": "captures/cellophane/20261026_214038",
+  "rows_used": 540,
+  "columns_used": [
+    0,
+    696
+  ],
+  "saturated_steps": [],
+  "bands": {
+    "blue": {
+      "centroid_col": 136.49727894840169,
+      "half_max_cols": [
+        0,
+        307
+      ],
+      "peak_transmission": 0.8224801421165466
+    },
+    "green": {
+      "centroid_col": 341.86186822946655,
+      "half_max_cols": [
+        0,
+        696
+      ],
+      "peak_transmission": 0.9042916297912598
+    },
+    "red": {
+      "centroid_col": 543.4121852182637,
+      "half_max_cols": [
+        356,
+        696
+      ],
+      "peak_transmission": 0.7748335003852844
+    }
+  },
+  "band_order_blue_green_red": true,
+  "method_B": {
+    "fraction_of_white_signal": {
+      "R": {
+        "blue": 0.38954079151153564,
+        "green": 0.7489517331123352,
+        "red": 0.5303577184677124
+      },
+      "G": {
+        "blue": 0.5628502368927002,
+        "green": 0.8571151494979858,
+        "red": 0.2673584222793579
+      },
+      "B": {
+        "blue": 0.6362003684043884,
+        "green": 0.8788082003593445,
+        "red": 0.24782297015190125
+      }
+    },
+    "share_of_filtered_light": {
+      "blue": {
+        "R": 0.212807759642601,
+        "G": 0.5910642743110657,
+        "B": 0.1961279660463333
+      },
+      "green": {
+        "R": 0.2589338421821594,
+        "G": 0.5696150660514832,
+        "B": 0.17145104706287384
+      },
+      "red": {
+        "R": 0.4478876292705536,
+        "G": 0.43401163816452026,
+        "B": 0.11810079216957092
+      }
+    }
+  },
+  "method_A_vs_B": {
+    "R": {
+      "shift_cols": 365.19825744628906,
+      "peak_measured_col": 478.1993713378906,
+      "peak_model_col": 486.1050212709346,
+      "peak_error_cols": 7.905649933044003,
+      "fwhm_measured_cols": 307.8385081116029,
+      "fwhm_model_cols": 367.9623815537991,
+      "shape_angle_deg": 16.597787539866097
+    },
+    "G": {
+      "shift_cols": 0.0,
+      "peak_measured_col": 121.02764129638672,
+      "peak_model_col": 121.02764271564921,
+      "peak_error_cols": 1.4192624888664795e-06,
+      "fwhm_measured_cols": 502.01461325557125,
+      "fwhm_model_cols": 502.01461325556403,
+      "shape_angle_deg": 0.0
+    },
+    "B": {
+      "shift_cols": -83.85539245605469,
+      "peak_measured_col": 0.0,
+      "peak_model_col": 37.07806477271967,
+      "peak_error_cols": 37.07806477271967,
+      "fwhm_measured_cols": 53.26852667104549,
+      "fwhm_model_cols": 646.202485844421,
+      "shape_angle_deg": 18.891045664216875
+    }
+  },
+  "approx_nm": {
+    "nominal_nm": {
+      "blue": 450.0,
+      "green": 530.0,
+      "red": 620.0
+    },
+    "anchor_cols": [
+      136.49727894840169,
+      341.86186822946655,
+      543.4121852182637
+    ],
+    "residuals_nm": [
+      1.914084728148282,
+      -3.864392869153221,
+      1.9503081410047116
+    ],
+    "nm_per_px": 0.41768874516094817,
+    "range_nm": [
+      391.07253811000993,
+      791.6360447193592
+    ]
+  }
+}

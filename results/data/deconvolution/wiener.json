@@ -1,0 +1,34 @@
+{
+  "scan": "captures/speed_comparison/20261026_212600_setting3_28.1s",
+  "edge": "captures/line_spread/20261026_222425/edge_best.npz",
+  "rev": 0,
+  "method": "Wiener, NSR 0.01",
+  "lsf_fwhm_px": {
+    "blue": 22.03331236064244,
+    "green": 41.33813683534626,
+    "red": 42.72049226793598
+  },
+  "edge_check": {
+    "blue": {
+      "rise_px_before": 23.90681522174749,
+      "rise_px_after": 10.561905882680922
+    },
+    "green": {
+      "rise_px_before": 33.86750092527154,
+      "rise_px_after": 13.298798990131115
+    },
+    "red": {
+      "rise_px_before": 38.23295921577394,
+      "rise_px_after": 10.691988543779292
+    }
+  },
+  "panorama": {
+    "lines": 153,
+    "period_s": 28.146376813177426,
+    "max_gap_deg": 2.5354203292043564,
+    "sharpness_before": 4416.8310546875,
+    "sharpness_after": 4473.43798828125,
+    "noise_before": 16.691593769707897,
+    "noise_after": 27.01603818394071
+  }
+}

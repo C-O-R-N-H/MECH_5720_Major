@@ -1,0 +1,59 @@
+comparison,option,metric,value
+1 period,28.1 s/turn: assumed label,turn_offset_rms_deg,22.3155
+1 period,28.1 s/turn: period search,turn_offset_rms_deg,0.0919
+1 period,28.1 s/turn: search + turn fit,turn_offset_rms_deg,0.0513
+1 period,13.9 s/turn: assumed label,turn_offset_rms_deg,57.9449
+1 period,13.9 s/turn: period search,turn_offset_rms_deg,0.5
+1 period,13.9 s/turn: search + turn fit,turn_offset_rms_deg,0.1032
+1 period,7.3 s/turn: assumed label,turn_offset_rms_deg,111.5592
+1 period,7.3 s/turn: period search,turn_offset_rms_deg,0.3876
+1 period,7.3 s/turn: search + turn fit,turn_offset_rms_deg,0.3814
+2 merging,28.1 s/turn: one turn,angular_step_deg,2.3609
+2 merging,28.1 s/turn: merged,angular_step_deg,2.1843
+2 merging,28.1 s/turn: merged,zipper_ratio,1.0008
+2 merging,13.9 s/turn: one turn,angular_step_deg,4.7893
+2 merging,13.9 s/turn: merged,angular_step_deg,3.9735
+2 merging,13.9 s/turn: merged,zipper_ratio,1.1167
+2 merging,7.3 s/turn: one turn,angular_step_deg,9.0749
+2 merging,7.3 s/turn: merged,angular_step_deg,1.8649
+2 merging,7.3 s/turn: merged,zipper_ratio,1.2723
+4 averaging,"whole_line, N=1",variation_pct,0.337
+4 averaging,"whole_line, N=2",variation_pct,0.237
+4 averaging,"whole_line, N=5",variation_pct,0.1572
+4 averaging,"whole_line, N=10",variation_pct,0.1053
+4 averaging,"whole_line, N=25",variation_pct,0.0547
+4 averaging,"segment_4, N=1",variation_pct,0.6811
+4 averaging,"segment_4, N=2",variation_pct,0.4762
+4 averaging,"segment_4, N=5",variation_pct,0.2982
+4 averaging,"segment_4, N=10",variation_pct,0.2045
+4 averaging,"segment_4, N=25",variation_pct,0.101
+3 dark,no dark subtraction,min_pair_angle_deg,17.9314
+3 dark,no dark subtraction,mean_pair_angle_deg,26.8431
+3 dark,no dark subtraction,contrast,0.9009
+3 dark,dark subtracted,min_pair_angle_deg,19.8486
+3 dark,dark subtracted,mean_pair_angle_deg,31.8227
+3 dark,dark subtracted,contrast,0.9698
+5 binning,rows along the slit x1,snr,16.1438
+5 binning,rows along the slit x2,snr,22.0477
+5 binning,rows along the slit x4,snr,29.7829
+5 binning,rows along the slit x8,snr,39.6407
+5 binning,rows along the slit x16,snr,51.7684
+5 binning,spectral columns x1,snr,16.1438
+5 binning,spectral columns x2,snr,21.4238
+5 binning,spectral columns x4,snr,28.1744
+5 binning,spectral columns x8,snr,37.0193
+5 binning,spectral columns x16,snr,47.9845
+6 stitching,28.1 s/turn: nearest,rev_to_rev_noise_rel,0.0712
+6 stitching,28.1 s/turn: nearest,roughness_merged,0.1143
+6 stitching,28.1 s/turn: linear,rev_to_rev_noise_rel,0.062
+6 stitching,28.1 s/turn: linear,roughness_merged,0.1059
+6 stitching,13.9 s/turn: nearest,rev_to_rev_noise_rel,0.0717
+6 stitching,13.9 s/turn: nearest,roughness_merged,0.1648
+6 stitching,13.9 s/turn: linear,rev_to_rev_noise_rel,0.0509
+6 stitching,13.9 s/turn: linear,roughness_merged,0.156
+6 stitching,7.3 s/turn: nearest,rev_to_rev_noise_rel,0.1847
+6 stitching,7.3 s/turn: nearest,roughness_merged,0.1017
+6 stitching,7.3 s/turn: linear,rev_to_rev_noise_rel,0.1172
+6 stitching,7.3 s/turn: linear,roughness_merged,0.0928
+7 colour,single column per channel,pixel_noise_pct,1.9608
+7 colour,averaged thirds,pixel_noise_pct,0.3922

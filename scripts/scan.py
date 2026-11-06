@@ -17,7 +17,6 @@ and later turns sample different angles, which fills in the panorama.
 Before scanning, same session and settings:
   * take_dark.py         dark frame (needed; retake if settings change)
   * snapshot.py          check the light covers the slit and isn't too dim
-  * cal_white_reference.py  optional, gives reflectance instead of counts
 
 Live preview: true colour if a white reference and wavelength calibration
 exist, otherwise false colour. Its angles use a placeholder period, so it
@@ -114,7 +113,7 @@ def main():
         print(f"WARNING: {e}")
     ref = pipeline.load_reference(args.reference)
     if ref is None:
-        print("no white reference (cal_white_reference.py) — showing uncalibrated false colour"
+        print("no white reference — showing uncalibrated false colour"
               + ("" if os.path.exists(store.calib_path("dark.npz")) else "; no dark frame either (take_dark.py)"))
     out = store.new_run_dir(args.experiment, args.tag or (f"{args.speed:g}s" if args.speed else "scan"))
     roi_rows = (roi[1] - roi[0]) // args.row_bin

@@ -3,8 +3,8 @@ Spectral processing: line catalogues, line finding, the pixel -> wavelength
 model (including smile), resampling onto a common wavelength grid, and
 reflectance.
 
-Wavelength model (what cal_wavelength.py writes to
-calibration/wavelength.json):
+Wavelength model (calibration/wavelength.json, e.g. from
+cal_cellophane.py --install):
 
     lambda(x, y) = polyval(coeffs, x - smile(y))      x, y in ROI pixel coords
     smile(y)     = polyval(smile_coeffs, y)           column shift of row y
@@ -38,8 +38,8 @@ FRAUNHOFER = {
 }
 
 # Compact fluorescent / fluorescent tube emission lines (Hg + rare-earth
-# phosphors). Used as an INDEPENDENT validation set for the sunlight
-# calibration, and to measure spectral resolution (they are narrow).
+# phosphors). Narrow, so useful for a line-based
+# wavelength calibration and to measure spectral resolution.
 FLUORESCENT = {
     "Hg 404.7": 404.7,
     "Hg 435.8": 435.8,

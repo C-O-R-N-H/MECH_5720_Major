@@ -38,8 +38,7 @@ What it reports
                  bands are broad and their exact centres unknown, so this is
                  APPROXIMATE (good to tens of nm). --install makes it the
                  active wavelength calibration (calibration/wavelength.json)
-                 so scans and panoramas switch to approximate nm; the sunlight
-                 calibration (cal_wavelength.py) supersedes it.
+                 so scans and panoramas switch to approximate nm.
 
 Output: captures/cellophane/<stamp>/  <step>.npz, spectra.png,
         methods.png, results.json, wavelength_approx.json

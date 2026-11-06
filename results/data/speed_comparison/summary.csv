@@ -1,0 +1,4 @@
+scan,period_s,turns,lines,rate_hz,lines_per_turn,deg_per_line_1turn,max_gap_deg_merged,blur_deg,rev12_offset_deg,turn_wobble_deg_rms,rev12_sam_deg,zipper_ratio
+20261026_212600_setting3_28.1s,28.1464,2.49,379,5.42,152.5,2.36,2.18,1.28,0.0,0.05,5.68,0.99
+20261026_212345_setting2_13.9s,13.8915,5.04,379,5.41,75.2,4.79,3.97,2.59,0.05,0.1,4.33,1.06
+20261026_211951_setting1_7.3s,7.3311,9.55,379,5.41,39.7,9.07,1.86,4.91,0.02,0.38,6.05,1.19

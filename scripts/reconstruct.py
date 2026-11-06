@@ -10,9 +10,9 @@ hand to redo a scan with different settings:  python reconstruct.py <scan>
 
 Pipeline (hsi/pipeline.py + hsi/turntable.py):
   1. every line: subtract the dark frame, or with a white reference
-     (cal_white_reference.py) reflectance = (S - D) / (W - D)
-  2. every line: onto a uniform wavelength grid, if cal_wavelength.py has
-     been run (otherwise stays in spectral columns)
+     reflectance = (S - D) / (W - D)
+  2. every line: onto a uniform wavelength grid, if calibration/wavelength.json
+     exists (otherwise stays in spectral columns)
   3. every line: angle from its timestamp, theta = 360 (t - t0) / period
        --period auto      measured from the scan if reliable, else nominal
        --period estimate | nominal   force one

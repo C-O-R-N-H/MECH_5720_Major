@@ -1,0 +1,175 @@
+{
+  "period": {
+    "28.1 s/turn": {
+      "assumed label": {
+        "period_s": 30.0,
+        "turn_offset_rms_deg": 22.315532684326172,
+        "turn_offset_max_deg": 22.315532684326172
+      },
+      "period search": {
+        "period_s": 28.13984736022617,
+        "turn_offset_rms_deg": 0.09188282489776611,
+        "turn_offset_max_deg": 0.09188282489776611
+      },
+      "search + turn fit": {
+        "period_s": 28.146376813177426,
+        "turn_offset_rms_deg": 0.051344990730285645,
+        "turn_offset_max_deg": 0.051344990730285645
+      }
+    },
+    "13.9 s/turn": {
+      "assumed label": {
+        "period_s": 15.0,
+        "turn_offset_rms_deg": 57.94494520505518,
+        "turn_offset_max_deg": 80.53078079223633
+      },
+      "period search": {
+        "period_s": 13.87651290606021,
+        "turn_offset_rms_deg": 0.4999746017492854,
+        "turn_offset_max_deg": 0.7105568647384644
+      },
+      "search + turn fit": {
+        "period_s": 13.891462461615085,
+        "turn_offset_rms_deg": 0.10321667145145809,
+        "turn_offset_max_deg": 0.18026858568191528
+      }
+    },
+    "7.3 s/turn": {
+      "assumed label": {
+        "period_s": 8.0,
+        "turn_offset_rms_deg": 111.5592387452128,
+        "turn_offset_max_deg": 151.5552806854248
+      },
+      "period search": {
+        "period_s": 7.331340292726936,
+        "turn_offset_rms_deg": 0.3875684435361408,
+        "turn_offset_max_deg": 0.5335680842399597
+      },
+      "search + turn fit": {
+        "period_s": 7.331113067855293,
+        "turn_offset_rms_deg": 0.3813683394549429,
+        "turn_offset_max_deg": 0.5053067207336426
+      }
+    }
+  },
+  "merging": {
+    "28.1 s/turn": {
+      "deg_per_line_one_turn": 2.360930718303834,
+      "max_gap_merged_deg": 2.1842707613335506,
+      "turns": 2.4855353951032026,
+      "zipper_ratio": 1.000778143634099
+    },
+    "13.9 s/turn": {
+      "deg_per_line_one_turn": 4.789286091215812,
+      "max_gap_merged_deg": 3.9734762370535464,
+      "turns": 5.042053968252202,
+      "zipper_ratio": 1.1166785428189967
+    },
+    "7.3 s/turn": {
+      "deg_per_line_one_turn": 9.074947592528828,
+      "max_gap_merged_deg": 1.8648884628476594,
+      "turns": 9.553903159912293,
+      "zipper_ratio": 1.2722959305223422
+    }
+  },
+  "averaging": {
+    "whole_line": {
+      "N=1": 0.3370044529438019,
+      "N=2": 0.23700347542762756,
+      "N=5": 0.15719938278198242,
+      "N=10": 0.10528233647346497,
+      "N=25": 0.054727714508771896
+    },
+    "segment_4": {
+      "N=1": 0.6810715198516846,
+      "N=2": 0.47617119550704956,
+      "N=5": 0.29815009236335754,
+      "N=10": 0.20453724265098572,
+      "N=25": 0.1010497584939003
+    }
+  },
+  "dark": {
+    "no dark subtraction": {
+      "pair_angles_deg": {
+        "material 1-material 2": 34.78513439330677,
+        "material 1-material 3": 32.44016515422911,
+        "material 1-material 4": 17.93138675213581,
+        "material 2-material 3": 33.0771064608663,
+        "material 2-material 4": 19.48434391441459,
+        "material 3-material 4": 23.34033426286982
+      },
+      "min_pair_angle_deg": 17.93138675213581,
+      "mean_pair_angle_deg": 26.843078489637065,
+      "contrast": 0.9009410989445388
+    },
+    "dark subtracted": {
+      "pair_angles_deg": {
+        "material 1-material 2": 39.70266750876631,
+        "material 1-material 3": 37.56155731334377,
+        "material 1-material 4": 19.84863748469975,
+        "material 2-material 3": 41.65218173878635,
+        "material 2-material 4": 23.25044201652363,
+        "material 3-material 4": 28.920807672199157
+      },
+      "min_pair_angle_deg": 19.84863748469975,
+      "mean_pair_angle_deg": 31.822715622386497,
+      "contrast": 0.9698348551364555
+    }
+  },
+  "binning": {
+    "rows along the slit": {
+      "x1": 16.14377461489451,
+      "x2": 22.04774028460272,
+      "x4": 29.782893109453955,
+      "x8": 39.64072666171379,
+      "x16": 51.76837419922409
+    },
+    "spectral columns": {
+      "x1": 16.14377461489451,
+      "x2": 21.423805361797733,
+      "x4": 28.174352417634548,
+      "x8": 37.019289489587344,
+      "x16": 47.98454181788664
+    }
+  },
+  "stitching": {
+    "28.1 s/turn": {
+      "nearest": {
+        "rev_to_rev_noise": 0.07121766905048586,
+        "roughness_merged": 0.1143210306763649
+      },
+      "linear": {
+        "rev_to_rev_noise": 0.062041216720521195,
+        "roughness_merged": 0.10592314600944519
+      }
+    },
+    "13.9 s/turn": {
+      "nearest": {
+        "rev_to_rev_noise": 0.07170478157727113,
+        "roughness_merged": 0.16478486359119415
+      },
+      "linear": {
+        "rev_to_rev_noise": 0.05091015913435201,
+        "roughness_merged": 0.15600049495697021
+      }
+    },
+    "7.3 s/turn": {
+      "nearest": {
+        "rev_to_rev_noise": 0.1846880380714334,
+        "roughness_merged": 0.10172626376152039
+      },
+      "linear": {
+        "rev_to_rev_noise": 0.11718131590035794,
+        "roughness_merged": 0.09280399978160858
+      }
+    }
+  },
+  "colour": {
+    "single column per channel": {
+      "pixel_noise_pct_of_range": 1.9607843137254901
+    },
+    "averaged thirds": {
+      "pixel_noise_pct_of_range": 0.39215686274509803
+    }
+  }
+}

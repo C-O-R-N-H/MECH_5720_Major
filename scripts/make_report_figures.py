@@ -1,12 +1,13 @@
 """
 Report figures
 ===============
-Regenerates every figure in the paper (latex/figures/*.pdf) from the data in
-captures/ and calibration/. Each figure is sized for the two-column ICCP
-layout: one column is 3.45 in wide, a full-width figure 7.1 in.
+Regenerates the paper's figures (results/figures/ by default) from the data
+in captures/ and calibration/. Each figure is sized for a two-column paper:
+one column is 3.45 in wide, a full-width figure 7.1 in.
 
-    python make_report_figures.py            # all figures
-    python make_report_figures.py lsf snr    # just some
+    python make_report_figures.py material             # the key figure, from results/data/
+    python make_report_figures.py lsf snr              # just some
+    python make_report_figures.py --format pdf --out <dir>
 
 Inputs (the 26 Oct session):
     captures/snapshot/*_white_card/          white-card snapshot
@@ -15,8 +16,9 @@ Inputs (the 26 Oct session):
     captures/exposure_sweep/<run>/           exposure / gain sweep
     captures/speed_comparison/               the three turntable scans
     captures/processing_comparisons/<run>/   period-method comparison
-    captures/material_comparison/analysis/   real vs fake fruit (exp_material_comparison.py)
-    calibration/dark.npz                     session dark frame
+    captures/material_comparison/analysis/   real vs fake fruit (exp_material_comparison.py);
+                                             falls back to results/data/material_comparison/
+    calibration/dark_20261026.npz            the 26 Oct session's dark frame
 """
 
 import argparse
@@ -34,7 +36,9 @@ import cal_cellophane
 import exp_line_spread
 import exp_speed_comparison
 
-OUT = os.path.join(store.REPO_ROOT, "latex", "figures")
+OUT = os.path.join(store.REPO_ROOT, "results", "figures")   # --out to change
+FMT = "png"                                                  # --format to change
+DATA = os.path.join(store.REPO_ROOT, "results", "data")
 COL = 3.45                                    # one column, inches
 FULL = 7.1                                    # both columns
 # identity colours where a curve IS a colour (pixel type, filter, spectral third)
@@ -56,14 +60,14 @@ def latest(pattern):
 
 def save(fig, name):
     os.makedirs(OUT, exist_ok=True)
-    path = os.path.join(OUT, name + ".pdf")
-    fig.savefig(path)
+    path = os.path.join(OUT, f"{name}.{FMT}")
+    fig.savefig(path, dpi=300)
     plt.close(fig)
     print(f"  {path}")
 
 
 def session_dark():
-    return np.load(store.calib_path("dark.npz"))["dark"]
+    return np.load(store.calib_path("dark_20261026.npz"))["dark"]
 
 
 # ---------------------------------------------------------------- figures ---
@@ -274,7 +278,10 @@ def fig_merging():
 def fig_material():
     """Relative reflectance of the real and fake lemon (left axis) and apple
     (right axis): spectral shape, band = 10-90% spread over 30° sectors."""
-    res = json.load(open(os.path.join(store.CAPTURES_DIR, "material_comparison", "analysis", "results.json")))
+    path = os.path.join(store.CAPTURES_DIR, "material_comparison", "analysis", "results.json")
+    if not os.path.exists(path):                      # the copy kept in the repository
+        path = os.path.join(DATA, "material_comparison", "results.json")
+    res = json.load(open(path))
     x, sp = np.array(res["grid"]), res["spectra"]
     fig, axl = plt.subplots(figsize=(COL, 2.0))
     axr = axl.twinx()
@@ -300,9 +307,13 @@ FIGURES = {"snapshot": fig_snapshot, "lsf": fig_lsf, "snr": fig_snr, "cellophane
 
 
 def main():
+    global OUT, FMT
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("which", nargs="*", choices=list(FIGURES) + [[]], default=[])
+    ap.add_argument("--out", default=OUT, help="folder to write the figures into")
+    ap.add_argument("--format", default=FMT, choices=["pdf", "png", "svg"])
     args = ap.parse_args()
+    OUT, FMT = os.path.abspath(args.out), args.format
     for name in args.which or FIGURES:
         print(name)
         FIGURES[name]()
